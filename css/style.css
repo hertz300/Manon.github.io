@@ -1,0 +1,284 @@
+/*учусь*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*--------------------*/
+body {
+  font-family: "Ubuntu", sans-serif;
+   padding-left: 15px;
+  padding-right: 15px;
+}
+.header {
+  width: 100%;
+  max-width: 1181px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 53px;
+  display: flex;
+  justify-content: space-between;
+  -ms-align-items: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-weight: 700;
+  /* border: 4px solid #F012E9;*/
+}
+.footer {
+    padding: 60px 10px 60px;
+    background-color: #f7f7f7;
+  /* border: 9px solid red;*/
+}
+.wrap {
+  width: 100%;
+  max-width: 1181px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  /* border: 7px solid #00FF00;*/
+}
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 14px;
+  align-items: center;
+  /*border: 6px solid #A7AC6D;*/
+}
+.nav > li {
+  margin-left: 15px;
+  /*border: 2px solid #E75B64;*/
+}
+.nav > li > a {
+  color: #202020;
+  /*border: 1px solid #333;*/
+}
+.nav_btn {
+  background-color: #5528ff;
+  border-radius: 5px;
+  padding: 2.5px 13px 4.5px 13px;
+  width: auto;
+  height: 24px;
+  font-weight: bold;
+  color: #fff;
+  font-weight: 700;
+  /* border: 5px solid #F400A1;*/
+}
+.logo {
+  display: flex;
+  align-items: center;
+  /*border: 2px solid green;*/
+}
+.logo_img {
+  display: block;
+  width: 58px;
+  height: 58px;
+  background-image: url(../img/logo.svg);
+  margin-right: 20px;
+  /* border: 5px solid red;*/
+}
+.logo_text {
+  font-size: 24;
+  color: #202020;
+}
+.title-main {
+  font-size: 56px;
+  color: #202020;
+  font-weight: 700;
+  /*border: 5px solid green;*/
+}
+.text-main {
+  font-size: 32px;
+  line-height: 1.5;
+  color: #4f4f4f;
+  /* border: 2px solid #000; */
+}
+.buttom {
+  background-color: #5528ff;
+
+  border-radius: 10px;
+  padding: 16px 56px 11px 56px;
+  width: auto;
+  height: 60px;
+  color: #fff;
+  font-size: 24px;
+  margin-top: 70px;
+  /* border: 2px solid #FFBC00;*/
+}
+.page {
+  padding-top: 40px;
+  position: relative; /*изменяет позицию элемента и сдвигает его в ту или иную сторону*/
+  /*   border: 2px solid green;*/
+}
+.page-top {
+  /*разделяющая линия*/
+  border-top: 1px solid #c2c2c2;
+  margin:40px 10px 40px 10px ;
+}
+.page h2 {
+  position: absolute;
+  top: -15px;
+  font-size: 14px;
+  font-weight: 300;
+  background-color: #fff;
+  padding: 5px 39px;
+  color: #c2c2c2;
+  /*border: 1px solid #000;*/
+}
+.services {
+  display: grid;
+  grid-template: 50% 50% / 50% 50%;
+  /*border: 5px solid red;*/
+}
+.services-item {
+  display: flex;
+  justify-content: flex-start; /*поставили иконки в строку*/
+  align-items: center;
+  padding-bottom: 40px;
+  /*border: 3px solid #0048BA;*/
+}
+.services-img {
+  flex-basis: 120px;
+  text-align: center; /*иконки по центру*/
+  /*border: 5px solid #000;*/
+}
+.services_text {
+  flex-basis: calc(100% - 120px); /*отодвинули иконки от текста*/
+}
+.services h3 {
+  font-size: 28px; /*увеличил шришт звголовков*/
+  font-weight: 400;
+  padding-bottom: 11px; /*отстур под h3*/
+  /* border: 1px solid #ff0;*/
+}
+.services p {
+  font-size: 14px;
+  color: #b2b2b2; /*цвет описания*/
+  line-height: 1.5;
+  /*border: 3px solid #000;*/
+}
+.clients {
+  /*12 логотипов раставили в 4 колонки и 3 ряда*/
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(4, 25%);
+  text-align: center; /*выровняли логотипы по центру*/
+  grid-row-gap: 40px;
+  /*border: 1px solid red;*/
+}
+.team {
+  /*ставим все в 3 колонки и фотки*/
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 33%);
+  grid-row-gap: 40px;
+  /*border: 1px solid #000;*/
+}
+.team-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /*border: 1px solid #66DDAA;*/
+}
+.team-item img {
+  margin-right: 20px;
+  width: 100px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.team-item > div {
+  flex-basis: calc(100% - 100px);
+}
+.team-item h3 {
+  font-size: 28px;
+  color: #202020;
+}
+.team-item p {
+  font-size: 14px;
+  color: #b2b2b2;
+}
+.box-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social {
+  list-style-type: none;
+  display: flex;
+}
+.social > li {
+  margin-left: 40px;
+}
+.social > li > a {
+  text-decoration: none;
+  color: #d2d2b2;
+  font-size: 24px;
+}
